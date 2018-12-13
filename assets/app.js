@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
     new Clipboard('dialog button.copy');
 
     // init QRCode Web Worker
-    const qrcodeWorker = new Worker("assets/qrcode_worker.js");
+    const qrcodeWorker = new Worker("./assets/qrcode_worker.js");
     qrcodeWorker.postMessage({cmd: 'init'});
     qrcodeWorker.addEventListener('message', showResult);
 
