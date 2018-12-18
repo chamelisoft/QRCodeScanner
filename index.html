@@ -112,6 +112,44 @@
         <!-- Buttons
         ================================================== -->
         <div class="bs-docs-section">
+            
+            
+      <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+        <video id="camera" autoplay>You need a camera in order to use this app.</video>
+        <div id="snapshotLimitOverlay">
+            <div id="about">
+                <h4 class="col-lg-8 col-md-7 col-sm-6">QR Code Scanner</h4>
+                <p>
+                    This is a lightweight progressive web app for scanning QR Codes offline.<br />
+                    You'll need at least a camera and a compatible browser.<br />
+                    If you are using an Iphone please run this in the Chrome Browser.<br />
+                    Source code is available on GitHub (https://github.com/chamelisoft/QRCodeScanner).
+                </p>
+            </div>
+        </div>
+        <canvas id="snapshot"></canvas>
+        <button id="flipCamera" type="button" class="btn btn-primary">Flip Camera</button>
+        <a id="aboutButton" type="button" href="https://github.com/chamelisoft/QRCodeScanner" class="btn btn-info">About</a>
+
+        <dialog class="mdl-dialog">
+            <h4 class="mdl-dialog__title">Your text</h4>
+            <div class="mdl-dialog__content">
+                <p id="resultsContainer"><span id="result"></span></p>
+                <p>
+                    <button type="button" class="copy mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" data-clipboard-target="#result">Copy</button>
+                    <a class="search mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised">Search</a>
+                </p>
+            </div>
+            <div class="mdl-dialog__actions">
+                <button type="button" class="continue mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Continue</button>
+            </div>
+        </dialog>
+
+
+            
+            
+            
             <div class="page-header">
                 <div class="row">
                     <div class="col-lg-12">
