@@ -36,6 +36,12 @@
           content="https://chamelisoft.github.io/QRCodeScanner/assets/images/icons/android-chrome-256x256.png" />
     <meta property="og:description" content="Lightweight progressive web app for scanning QR codes offline" />
 
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+
 
 </head>
 <body>
